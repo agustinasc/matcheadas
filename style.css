@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+:root{
+    --font1: 'Akaya Telivigala', cursive;
+    --font2: 'Montserrat', sans-serif
+}
+
+.main-title{
+    font-family: var(--font1);
+}
