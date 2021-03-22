@@ -8,8 +8,8 @@
     --font2: 'Montserrat', sans-serif
 }
 body{
-
-    background-image: url(https://images.pexels.com/photos/1835712/pexels-photo-1835712.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(../img/cover.jpeg);
+/*  background-image: url(https://images.pexels.com/photos/1835712/pexels-photo-1835712.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); */       
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -25,10 +25,12 @@ body{
     justify-content: space-between; 
     align-items: center;
     width: 500px;
+    height: 100vh;
 }
 
 .main-title{
     margin: 10%;
+    font-size: 50px;
     font-family: var(--font1);
     text-shadow: 1px 1px #fafafa, 1px -1px #fafafa, -1px -1px #fafafa, -1px 1px #fafafa;
 }
@@ -47,6 +49,7 @@ body{
     display: flex;
 }
 
+
 /* TIMER */
 
 .timer{
@@ -55,11 +58,26 @@ body{
     
 }
 
-/* GRILLA */
-.grilla{
-    width: 100%;
+
+/************* GRILLA **************/
+
+/* .grid{
+  
+} */
+
+.grid-board{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 440px;
     border-radius: 5px;
     padding: 2%;
     border: 2px solid black;
     background-color: rgba(0, 0, 0, 0.75);
+}
+/* p{
+    font-size: 25px;
+} */
+img {
+    width: 60px;
 }

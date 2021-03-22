@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modales.css">
 
     <!-- Twemoji -->
     <script  src = " https://twemoji.maxcdn.com/v/latest/twemoji.min.js " crossorigin = " anónimo " ></script>
@@ -29,6 +30,10 @@
                 <p>Puntos:</p>
             </article>
 
+            <button id="nivel-facil">facil</button>
+            <button id="nivel-medio">medio</button>
+            <button id="nivel-dificil">dificil</button>
+
             <article class="control-info-refresh">
                 <button id="">
                     <i class="fas fa-info-circle"></i>
@@ -40,8 +45,9 @@
         </section>
 
         <!-- Grilla Section -->
-        <section class="grilla">
-            <div id="em"></div>
+
+        <section class="grid">
+            <div id="grid-board" class="grid-board"></div>
         </section>
 
         <!-- Timer Section -->
@@ -54,8 +60,10 @@
 
      
 
+    <!-- SweetALert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script src="./app.js"></script>
-    <script src="./modales.js"></script>
+    <!-- <script src="./modales.js"></script> -->
 </body>
 </html>
