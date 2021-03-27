@@ -29,7 +29,7 @@ body{
 }
 
 .main-title{
-    margin: 10%;
+    margin: 3%;
     font-size: 50px;
     font-family: var(--font1);
     text-shadow: 1px 1px #fafafa, 1px -1px #fafafa, -1px -1px #fafafa, -1px 1px #fafafa;
@@ -79,5 +79,10 @@ body{
     font-size: 25px;
 } */
 img {
+    width: 50px;
+    padding: 10%;
+}  
+/* PARA NIVEL 6
+ *//* img {
     width: 60px;
-}
+}  */
