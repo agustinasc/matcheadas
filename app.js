@@ -1,3 +1,4 @@
+//--------- DECLARANDO VARIBLAES ------//
 let gridBoard = document.getElementById('grid-board');
 const imag = document.querySelectorAll('img')
 const nivelFacil = document.getElementById('nivel-facil')
@@ -6,56 +7,39 @@ const nivelDificil = document.getElementById('nivel-dificil')
 
 const emojis = ['🌞', '🥥', '😎', '🐬', '🌡', '🏝' ];
 let level = 8;
-const squares = [];
-// const emojis = [
-//     'red',
-//     'yellow',
-//     'orange',
-//     'purple',
-//     'green',
-//     'blue'
-// ];
+let gridRow = []; 
 
-//--------- CREANDO LA GRILLA
+//--------- CREANDO LA GRILLA ---------//
 
-// const creatBoard = () =>{
-//     gridBoard.innerHTML = '';
-//     for (let i = 0; i < level; i++) {
-    //         for (let j = 0; j < level; j++) {
-        //             console.log(i,j)
-//            const newp = document.createElement("p");
-//            newp.innerHTML = emojis[getRandomNum(6,0)];
-//             gridBoard.appendChild(newp);
-//         }
+const creatBoard = () =>{
+    gridBoard.innerHTML = '';
+    for (let i = 0; i < level; i++) {
+        gridRow[i] = [];
+            for (let j = 0; j < level; j++) {
+                    //console.log(i,j)
+           const newp = document.createElement("p");
+           newp.setAttribute("id", `${i} , ${j}`)
+           let value = emojis[getRandomNum(6,0)];
+           gridRow[i][j] = value;
+           newp.innerHTML = value;
+            gridBoard.appendChild(newp);
+        }
         
-//     }
-// }
-
-const creatBoard = () => {
-    for (let i = 0; i < level*level; i++) {
-        const square = document.createElement("p");
-        square.setAttribute('draggable', true);
-        square.setAttribute('id', i);
-        let randomEmoji = Math.floor(Math.random() * emojis.length);
-        //console.log(randomEmoji)
-        //console.log(emojis[randomEmoji])
-        square.innerHTML = emojis[randomEmoji];
-        gridBoard.appendChild(square);
-        squares.push(square);
     }
+    clickEmoji();
 }
-creatBoard();
 
-//--------- OBTENIENDO EL NUMERO Y EMOJI RANDOM
+// --------- OBTENIENDO EL NUMERO Y EMOJI RANDOM ----------//
 
-// const getRandomNum = (max, min) =>{
-//     return Math.floor(Math.random() * (max - min) + min);
-// };
-// const ramdom = getRandomNum(0, 6);
-// const getEmoji = console.log(`posicion: ${ramdom}`, emojis[ramdom])
+const getRandomNum = (max, min) =>{
+    return Math.floor(Math.random() * (max - min) + min);
+};
+const ramdom = getRandomNum(0, 6);
+const getEmoji =console.log(`posicion: ${ramdom}`, emojis[ramdom]);
 
 
-    ////----------------NIVELES--------------------//
+
+//---------------- NIVELES --------------------//
 
 // const changeLevel = () =>{
 //     //level += 1 ;
@@ -85,6 +69,28 @@ creatBoard();
 //     creatBoard();
 //     twemoji.parse(document.body);
 // })
+
+
+////------------ EVENTO PARA CLICKEAR EMOJIS -------------//
+
+const clickEmoji = () =>{
+    const elem = document.getElementsByTagName("p");
+
+    for (let i = 0; i < elem.length; i++) {
+        elem[i].addEventListener('click', (elem)=>{
+            console.log(elem)
+        });
+        
+    }
+}
+creatBoard();
+
+/////////---------ENCONTRANDO LOS MATCHES -------////////////
+//---------- FILAS ------------------//
+
+
+
+
 
 
 // ------------TWEMOJI (no hay que eliminarlo)
