@@ -44,27 +44,27 @@ const getEmoji =console.log(`posicion: ${ramdom}`, emojis[ramdom]);
 
 //---------------- NIVELES --------------------//
 
-// const changeLevel = () =>{
-//     //level += 1 ;
-//     gridBoard.style.width = `${70 * level}px`;
-//     //     //console.log(level)
-//     twemoji.parse(document.body);
-// }
+const changeLevel = () =>{
+    //level += 1 ;
+    gridBoard.style.width = `${70 * level}px`;
+    //     //console.log(level)
+    twemoji.parse(document.body);
+}
 
-// nivelFacil.addEventListener('click', ()=>{
-//     level = 6;
-//     changeLevel();
-//     creatBoard();
-//     twemoji.parse(document.body);
-// })
+nivelFacil.addEventListener('click', ()=>{
+    level = 6;
+    changeLevel();
+    creatBoard();
+    twemoji.parse(document.body);
+})
 
-// nivelMedio.addEventListener('click', ()=>{
-//     level = 7;
-//     changeLevel();
-//     creatBoard();
-//     // gridBoard.style.width = `${70 * level}px`;
-//     twemoji.parse(document.body);
-// });
+nivelMedio.addEventListener('click', ()=>{
+    level = 7;
+    changeLevel();
+    creatBoard();
+    // gridBoard.style.width = `${70 * level}px`;
+    twemoji.parse(document.body);
+});
 
 // nivelDificil.addEventListener('click', ()=>{
 //     level = 8;
@@ -109,7 +109,7 @@ reiniciar.addEventListener('click', ()=>{
             clock.innerHTML = timeGame
             timeGame --;
         }else{
-            gameOverModal()
+            gameOver()
             return
         }
         
