@@ -1,13 +1,16 @@
 //--------- DECLARANDO VARIBLAES ------//
 let gridBoard = document.getElementById('grid-board');
-const imag = document.querySelectorAll('img')
-const nivelFacil = document.getElementById('nivel-facil')
-const nivelMedio = document.getElementById('nivel-medio')
-const nivelDificil = document.getElementById('nivel-dificil')
+const imag = document.querySelectorAll('img');
+const clock = document.getElementById('clock');
+const nivelFacil = document.getElementById('nivel-facil');
+const nivelMedio = document.getElementById('nivel-medio');
+const nivelDificil = document.getElementById('nivel-dificil');
+const reiniciar = document.getElementById('reiniciar');
 
 const emojis = ['🌞', '🥥', '😎', '🐬', '🌡', '🏝' ];
 let level = 8;
 let gridRow = []; 
+
 
 //--------- CREANDO LA GRILLA ---------//
 
@@ -73,6 +76,7 @@ const getEmoji =console.log(`posicion: ${ramdom}`, emojis[ramdom]);
 
 ////------------ EVENTO PARA CLICKEAR EMOJIS -------------//
 
+
 const clickEmoji = () =>{
     const elem = document.getElementsByTagName("p");
 
@@ -85,12 +89,33 @@ const clickEmoji = () =>{
 }
 creatBoard();
 
+
 /////////---------ENCONTRANDO LOS MATCHES -------////////////
 //---------- FILAS ------------------//
 
 
+// ------------TIMER  ------------------//
+let process;
+let timeGame = 5;
 
 
+reiniciar.addEventListener('click', ()=>{
+
+    clearInterval(process);
+    //clock.innerHTML = 0;
+    
+    process = setInterval(() => {
+        if(timeGame > 0){
+            clock.innerHTML = timeGame
+            timeGame --;
+        }else{
+            gameOverModal()
+            return
+        }
+        
+    }, 1000);
+
+})
 
 
 // ------------TWEMOJI (no hay que eliminarlo)
@@ -98,11 +123,3 @@ creatBoard();
 twemoji.parse(document.body);
 
 
-// gridBoard.innerHTML = emojis;
-
-// var div = document.createElement('div');
-// div.textContent = 'I \u2764\uFE0F emoji!';
-// document.body.appendChild(div);
-
-
-// var img = div.querySelector('img');

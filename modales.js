@@ -1,18 +1,18 @@
 ////// MODAL BIENVENID@
 
-swal({
-    title: "Bienvenid@s!",
-    text: `Objetivo:
-        Juntar verticalmente u horizontalmente tres o mas emojis iguales. 
-    Lo puedes hacer, seleccionando un emoji y luego clickeando en otro emoji adyacente para poder intercambiarlos de lugar.
+// swal({
+//     title: "Bienvenid@s!",
+//     text: `Objetivo:
+//         Juntar verticalmente u horizontalmente tres o mas emojis iguales. 
+//     Lo puedes hacer, seleccionando un emoji y luego clickeando en otro emoji adyacente para poder intercambiarlos de lugar.
     
-    Al alinearlos, se eliminarán e irás sumando puntos. Tenes 30 segundos para alinear la máxima cantidad posible.
+//     Al alinearlos, se eliminarán e irás sumando puntos. Tenes 30 segundos para alinear la máxima cantidad posible.
     
-    Controles:
-        -Click izquierdo: selección.
-        -Enter o Espaciado: selección.
-        -Flechas o WASD: movimiento e intercambio.`,
-});
+//     Controles:
+//         -Click izquierdo: selección.
+//         -Enter o Espaciado: selección.
+//         -Flechas o WASD: movimiento e intercambio.`,
+// });
 
 
 
@@ -92,3 +92,27 @@ swal({
 
     
 
+//------- JUEGO TERMINADO ---------//
+
+const gameOverModal = () =>{
+    swal("Juego Terminado", {
+        buttons: {
+            newGa: {
+                text: "Nuevo Juego",
+                value: "newGa"
+            },
+
+            reTime: {
+                text: "Reiniciar",
+                value: "reTime",
+            }
+        },
+        
+    closeOnClickOutside: false,
+    closeOnEsc: false,
+
+
+    
+      });
+    clearInterval(process)
+}
