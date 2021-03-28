@@ -16,7 +16,7 @@
 
 
 
-/////// MODAL NIVELES
+//------ MODAL NIVELES ------//////
 
 
     // const seleccionNivel = () => {
@@ -62,8 +62,7 @@
 
     //   const gameOver = () =>{
     //     swal({
-    //         title: '¡Juego Terminado!',
-    //         text: Puntaje Final: 0,
+          
     //         buttons: {
     //             juegoNuevo: {
     //                 text: 'Nuevo Juego',
@@ -94,25 +93,21 @@
 
 //------- JUEGO TERMINADO ---------//
 
-const gameOverModal = () =>{
+const gameOver = () =>{
     swal("Juego Terminado", {
         buttons: {
-            newGa: {
+            newGame: {
                 text: "Nuevo Juego",
-                value: "newGa"
+                value: "newGame"
             },
 
-            reTime: {
+            reIniciar: {
                 text: "Reiniciar",
-                value: "reTime",
+                value: "reIniciar",
             }
         },
-        
-    closeOnClickOutside: false,
-    closeOnEsc: false,
-
 
     
-      });
+    });
     clearInterval(process)
 }
