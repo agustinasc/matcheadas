@@ -2,9 +2,9 @@
 let gridBoard = document.getElementById('grid-board');
 const imag = document.querySelectorAll('img');
 const clock = document.getElementById('clock');
-const nivelFacil = document.getElementById('nivel-facil');
-const nivelMedio = document.getElementById('nivel-medio');
-const nivelDificil = document.getElementById('nivel-dificil');
+// const nivelFacil = document.getElementById('nivel-facil');
+// const nivelMedio = document.getElementById('nivel-medio');
+// const nivelDificil = document.getElementById('nivel-dificil');
 const reiniciar = document.getElementById('reiniciar');
 
 const emojis = ['🌞', '🥥', '😎', '🐬', '🌡', '🏝' ];

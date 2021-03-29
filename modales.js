@@ -19,7 +19,7 @@
 //------ MODAL NIVELES ------//////
 
 
-    // const seleccionNivel = () => {
+//const selectLevel = () => {
         swal ({
         title:'Nuevo juego!',
         text: 'Selecciona un nivel',
@@ -58,7 +58,7 @@
             }
             creatBoard(level)
         })
-    //   }
+//}
 
     //   const gameOver = () =>{
     //     swal({
@@ -93,21 +93,38 @@
 
 //------- JUEGO TERMINADO ---------//
 
-const gameOver = () =>{
-    swal("Juego Terminado", {
-        buttons: {
-            newGame: {
-                text: "Nuevo Juego",
-                value: "newGame"
-            },
+// const gameOver = () => {
+    // swal("Juego Terminado", {
+    //     buttons: {
+    //         newGame: {
+    //             text: "Nuevo Juego",
+    //             value: "newGame"
+    //         },
 
-            reIniciar: {
-                text: "Reiniciar",
-                value: "reIniciar",
-            }
-        },
+    //         reIniciar: {
+    //             text: "Reiniciar",
+    //             value: "reIniciar",
+    //         }
+    //     },
 
     
-    });
-    clearInterval(process)
-}
+    // })
+    // .then(
+    //     (value) => {
+    //             switch (value) {
+    //                 case 'nuevoJuego':
+    //                     selectLevel();
+    //                     break;
+
+    //                 case 'reiniciar':
+    //                     creatBoard(level);
+    //                     break;
+    //                     default:
+    //             }
+    //             clearInterval(process)
+    //     });
+//     }
+
+    
+
+    
