@@ -69,7 +69,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 440px;
+    /* width: 440px; */
     border-radius: 5px;
     padding: 2%;
     border: 2px solid black;
