@@ -1,5 +1,8 @@
-/* MODALES */
-
+/*****ESTILOS DE MODALES ****/
+:root{
+    --font1: 'Akaya Telivigala', cursive;
+    --font2: 'Montserrat', sans-serif
+}
 .swal-modal {
     /*     background-color: rgba(173 ,201,146,0.92);
      */    background-color: rgba(254 ,233,175,0.92);
@@ -15,3 +18,16 @@
         text-align: center;
         color: #61534e;
 }
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #4962B3;
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    font-family: var(--font2);
+  }
+
+  .swal-button:hover{
+      color: black;
+  }

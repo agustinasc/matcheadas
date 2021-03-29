@@ -29,7 +29,7 @@ body{
 }
 
 .main-title{
-    margin: 3%;
+    margin: 2%;
     font-size: 50px;
     font-family: var(--font1);
     text-shadow: 1px 1px #fafafa, 1px -1px #fafafa, -1px -1px #fafafa, -1px 1px #fafafa;
@@ -42,7 +42,7 @@ body{
     border-radius: 5px;
     border: 2px solid black;
     width: 100%;
-    margin: 5%;
+    margin: 3%;
     padding: 5px;
 }
 .control-puntaje{
@@ -50,11 +50,12 @@ body{
 }
 
 
-/* TIMER */
+/****** TIMER *******/
 
 .timer{
     width: 110px;
     justify-content: center;
+    padding: 1%;
     
 }
 
@@ -82,7 +83,19 @@ img {
     width: 50px;
     padding: 10%;
 }  
-/* PARA NIVEL 6
- *//* img {
-    width: 60px;
-}  */
+
+/*************ICONOS DE LA GRILLA **************/
+
+.control-info-refresh{
+    font-size: 1.3em;
+
+}
+#information, #refresh{
+    margin: 0px 2px;
+    color: black;
+}
+#information:hover, #refresh:hover{
+    cursor: pointer;
+    color: #4962B3;
+/*     border: 3px solid white;
+ */}
