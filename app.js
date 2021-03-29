@@ -6,7 +6,7 @@ let gridBoard = document.getElementById('grid-board');
 const imag = document.querySelectorAll('img');
 const clock = document.getElementById('clock');
 const information = document.getElementById('information');
-const backToGame = document.getElementById('back-to-game');
+const refresh = document.getElementById('refresh');
 // const nivelFacil = document.getElementById('nivel-facil');
 // const nivelMedio = document.getElementById('nivel-medio');
 // const nivelDificil = document.getElementById('nivel-dificil');
@@ -139,9 +139,9 @@ information.addEventListener('click', ()=>{
     wecolmeModal();
     stopTimer();
 })
-backToGame.addEventListener('click', ()=>{
-    timerRestart();
-    creatBoard();
+refresh.addEventListener('click', ()=>{
+    refreshGame();
+    stopTimer();
 })
 
 // ------------TWEMOJI (no hay que eliminarlo)

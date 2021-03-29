@@ -125,5 +125,44 @@ const gameOver = () => {
     }
 
     
+const refreshGame = () => {
 
-    
+    swal({
+        title: "Reiniciar Juego?",
+        text: `Perderas todo tu puntaje acumulado!`,
+        buttons: {
+
+                cancela: {
+                text: 'Cancelar',
+                value: 'cancela',
+                },
+                
+                newGame: {
+                text: 'Nuevo Juego!',
+                value: 'newGame',
+                },
+
+            },    
+    })
+
+    .then(
+        (value)=>{
+            switch (value) {
+                case 'cancela':
+                    timerRestart(timeGame)
+                    break;
+                    
+
+                case 'newGame':
+                    selectLevel();
+                    timerRestart(timeGame);
+                    break;
+                    default:
+
+            }
+            
+        })
+    stopTimer();
+
+}
+
