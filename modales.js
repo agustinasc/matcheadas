@@ -20,44 +20,44 @@
 
 
     // const seleccionNivel = () => {
-    //     swal ({
-    //     title:'Nuevo juego!',
-    //     text: 'Selecciona una dificultad',
-    //     buttons: {
-    //         facil: {
-    //             text: 'Fácil',
-    //             value: 'facil',
-    //         },
-    //         normal: {
-    //             text: 'Normal',
-    //             value: 'normal',
-    //         },
-    //         dificil: {
-    //             text: 'Difícil',
-    //             value: 'dificil',
-    //         },
-    //     },
+        swal ({
+        title:'Nuevo juego!',
+        text: 'Selecciona un nivel',
+        buttons: {
+            facil: {
+                text: 'Fácil',
+                value: 'facil',
+            },
+            normal: {
+                text: 'Normal',
+                value: 'normal',
+            },
+            dificil: {
+                text: 'Difícil',
+                value: 'dificil',
+            },
+        },
     //     closeOnClickOutside: false,
     //     closeOnEsc: false,
-    // })
-    // .then(
-    //     (value)=>{
-    //         switch (value) {
-    //             case 'facil':
-    //                 level = 9;
-    //                 break;
+    })
+    .then(
+        (value)=>{
+            switch (value) {
+                case 'facil':
+                    level = 9;
+                    break;
 
-    //            case 'normal':
-    //                level = 8;
-    //                break;
+               case 'normal':
+                   level = 8;
+                   break;
 
-    //           case 'dificil':
-    //               level = 7;
-    //               break;
-    //               default:
-    //         }
-    //         crearTablero(level)
-    //     })
+              case 'dificil':
+                  level = 7;
+                  break;
+                  default:
+            }
+            creatBoard(level)
+        })
     //   }
 
     //   const gameOver = () =>{
