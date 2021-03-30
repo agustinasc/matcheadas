@@ -16,7 +16,7 @@ const emojis = ['🌞', '🥥', '😎', '🐬', '🌡', '🏝' ];
 let level = 8;
 let gridRow = []; 
 let process;
-let timeGame = 5;
+let timeGame = 30;
 
 
 
