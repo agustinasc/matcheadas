@@ -9,7 +9,8 @@
 ### Para jugar tenes que hacer click en este [enlace](https://agustinasc.github.io/matcheadas-playero/) y seguir las instrucciones.
 
 ### Al abrirlo se debe ver así:
-![imagen](./css/img/screenshot.png)
+
+![imagen](./img/screenshot.png)
 
 <br>
 
